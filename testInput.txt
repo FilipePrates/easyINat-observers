@@ -1,0 +1,16 @@
+// Send Text to Iara
+
+curl -X POST http://localhost:3000/whatsapp \
+  -d "From=whatsapp:+5511999999999" \
+  -d "Body=Oi Iara!" \
+  -d "NumMedia=0"
+
+
+// Send Image to Iara
+
+curl -X POST http://localhost:3000/whatsapp \
+  -d "From=whatsapp:+5511999999999" \
+  -d "Body=Minha plantinha" \
+  -d "NumMedia=1" \
+  -d "MediaUrl0=https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hibiscus_flower.jpg/640px-Hibiscus_flower.jpg" \
+  -d "MediaContentType0=image/jpeg"
